@@ -1,8 +1,11 @@
+'use client'
+
 import { Diamond } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import ProjectsPagination from "@/components/project-pagination"
+import { useState, useEffect } from "react"
 
 const projects = [
   {
@@ -59,9 +62,15 @@ const projects = [
 export default function ProjectsPage({
   searchParams,
 }: {
-  searchParams: { page?: string }
+  searchParams: Promise<{ page?: string }>
 }) {
-  const currentPage = Number(searchParams.page) || 1
+  const [params, setParams] = useState<{ page?: string }>({})
+
+  useEffect(() => {
+    searchParams.then(setParams)
+  }, [searchParams])
+
+  const currentPage = Number(params.page) || 1
   const projectsPerPage = 4
   const totalPages = Math.ceil(projects.length / projectsPerPage)
 
