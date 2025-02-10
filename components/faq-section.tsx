@@ -28,7 +28,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="border-t py-24 md:py-32">
+    <section className=" py-16 md:py-20">
       <div className="container mx-auto">
         <div className="flex items-center gap-2 mb-8">
           <Diamond className="h-6 w-6 fill-emerald-950" />

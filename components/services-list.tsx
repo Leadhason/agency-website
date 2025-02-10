@@ -37,11 +37,11 @@ export default function ServicesList() {
           <Diamond className="h-6 w-6 fill-emerald-950" />
           <h2 className="text-2xl font-medium">Professional & exceptional</h2>
         </div>
-        <div className="space-y-12 px-10">
+        <div className="space-y-12 px-8">
           {services.map((service) => (
             <div key={service.id} className="group border-b border-black pb-12 last:border-0">
               <Link href={service.href} className="block space-y-4">
-                <div className="flex items-center p-3 justify-between">
+                <div className="flex items-center justify-between">
                     <div className="flex">
                         <div className="space-y-4 max-w-48">
                             <h2 className="text-4xl font-semibold">{service.id}</h2>
@@ -51,7 +51,7 @@ export default function ServicesList() {
                             <p className="text-lg text-justify mx-20 font-light text-zinc-600">{service.description}</p>
                         </div>
                     </div>
-                    <ArrowUpRight className="h-16 w-16 text-extralight transition-transform group-hover:translate-x-2 group-hover:-translate-y-2" />
+                    <ArrowUpRight className="h-8 w-8 text-extralight transition-transform group-hover:translate-x-2 group-hover:-translate-y-2" />
                 </div>
               </Link>
             </div>
