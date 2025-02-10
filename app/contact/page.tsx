@@ -43,7 +43,7 @@ export default function ContactPage() {
                         <br />
                         <span className='lg:ml-[400px] sm:text-7xl md:text-[140px] lg:text-[180px] mt-10'>& create</span>
                     </h1>
-                <div className="items-center justify-center lg:justify-center py-20 w-full">
+                <div className="items-center justify-center lg:justify-center py-10 w-full">
                     <p className="max-w-lg text-lg font-medium px-20 text-justify text-zinc-300">
                         Let’s bring your vision to life. Reach out, and let’s create something impactful together.
                     </p>
