@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import ProjectsPagination from "@/components/project-pagination"
-import { useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 
 const projects = [
   {
@@ -59,18 +59,9 @@ const projects = [
   
 ]
 
-export default function ProjectsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string }>
-}) {
-  const [params, setParams] = useState<{ page?: string }>({})
-
-  useEffect(() => {
-    searchParams.then(setParams)
-  }, [searchParams])
-
-  const currentPage = Number(params.page) || 1
+export default function ProjectsPage() {
+  const searchParams = useSearchParams()
+  const currentPage = Number(searchParams.get("page")) || 1
   const projectsPerPage = 4
   const totalPages = Math.ceil(projects.length / projectsPerPage)
 

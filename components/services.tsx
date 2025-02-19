@@ -4,8 +4,8 @@ import Link from "next/link"
 export default function Services() {
   const services = [
     {
-      title: "Graphic and Logo Design",
-      href: "/services/brand-strategy",
+      title: "Branding & Logo Design",
+      href: "/services/branding-and-logo-design",
     },
     {
       title: "Web Development",
@@ -14,6 +14,10 @@ export default function Services() {
     {
       title: "Shirt Printing",
       href: "/services/shirt-printing",
+    },
+    {
+      title: "Graphic Design",
+      href: "/services/graphic-design",
     },
   ]
 

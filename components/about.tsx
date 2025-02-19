@@ -16,15 +16,15 @@ export default function About() {
               <div className="space-y-6 text-xl font-medium p-5 px-7 text-justify">
                 <p>
                   At inkoperations media, we're a group of
-                  <br/>passionate creatives, tech geeks, and marketing pros
-                  <br/>who love nothing more than crafting unique
-                  <br/>digital experiences.
+                  passionate creatives, tech geeks, and marketing pros
+                  who love nothing more than crafting unique
+                  digital experiences.
                 </p>
                 <p>
                   Based in the heart of Zagreb, we
-                  <br/>specialize in combining bold ideas with innovative
-                  <br/>web development and savvy digital marketing strategies
-                  <br/>that actually get results.
+                  specialize in combining bold ideas with innovative
+                  web development and savvy digital marketing strategies
+                  that actually get results.
                 </p>
               </div>
               <button className="rounded-full w-[180px] mx-7 items-center hover:bg-emerald-900 hover:text-white transition-100 text-xl text-center border border-black p-3">

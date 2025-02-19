@@ -7,7 +7,7 @@ const services = [
     title: "Branding and Logo Design",
     description:
       "From logos to tone of voice, we build brands that stand out, ensuring long-lasting connections with customers.",
-    href: "/services/brand-strategy",
+    href: "/services/branding-and-logo-design",
   },
   {
     id: "02",
@@ -19,13 +19,13 @@ const services = [
     id: "03",
     title: "Shirt Printing",
     description: "Strategic campaigns that drive results and connect with your target audience.",
-    href: "/services/digital-marketing",
+    href: "/services/shirt-printing",
   },
   {
     id: "04",
     title: "Graphic Design",
     description: "Strategic campaigns that drive results and connect with your target audience.",
-    href: "/services/digital-marketing",
+    href: "/services/graphic-design",
   },
 ]
 

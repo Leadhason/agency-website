@@ -41,7 +41,7 @@ export default function ContactPage() {
                     <h1 className="text-6xl font-bold tracking-loose lg:-ml-[200px]">
                         <span className='sm:text-7xl md:text-[140px] lg:text-[180px] lg:-ml-[230px]'>connect</span>
                         <br />
-                        <span className='lg:ml-[400px] sm:text-7xl md:text-[140px] lg:text-[180px] mt-10'>& create</span>
+                        <span className='lg:ml-[500px] sm:text-7xl md:text-[140px] lg:text-[180px] mt-10'>& create</span>
                     </h1>
                 <div className="items-center justify-center lg:justify-center py-10 w-full">
                     <p className="max-w-lg text-lg font-medium px-20 text-justify text-zinc-300">

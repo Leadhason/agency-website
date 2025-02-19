@@ -19,7 +19,7 @@ export default function ProjectsPagination({ totalPages, currentPage }: Projects
   const router = useRouter()
 
   const handlePageChange = (page: number) => {
-    router.push(`/projects?page=${page}`)
+    router.push(`/projects?page=${page}`, { scroll: false })
   }
 
   return (
