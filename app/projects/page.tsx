@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import ProjectsPagination from "@/components/project-pagination"
 import { useSearchParams } from "next/navigation"
+import { Suspense } from 'react';
 
 const projects = [
   {
@@ -59,7 +60,18 @@ const projects = [
   
 ]
 
-export default function ProjectsPage() {
+
+export default function ProjectsSuspense() {
+  return (
+    <Suspense fallback={<div className="items-center justify-center w-full h-full">Loading...</div>}>
+      <ProjectsPage />
+    </Suspense>
+  );
+}
+
+
+
+function ProjectsPage() {
   const searchParams = useSearchParams()
   const currentPage = Number(searchParams.get("page")) || 1
   const projectsPerPage = 4
